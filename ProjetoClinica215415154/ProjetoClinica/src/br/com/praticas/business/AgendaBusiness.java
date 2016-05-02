@@ -14,13 +14,13 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Alan Santos Diniz
+ * @author Hugo Nathan S.
  */
 public class AgendaBusiness implements IAgendaBusiness{
     
        //----------------------------------------------------
-    // AK VC VAI ASSESAR TODOS OS METODOS ATRAVEZ DA FACHADA. 
-    // O METODO GETINSTANCE() FAZ COM QUE TODA VEZ QUE FOR MECHER ALGO NO BANCO
+    // ACESAR TODOS OS METODOS ATRAVEZ DA FACHADA. 
+    // O METODO GETINSTANCE() FAZ COM QUE TODA VEZ QUE FOR ALTERAR ALGO NO BANCO
     // O BANCO É ESTARTADO SOMENTE UMA VEZ
         private Facade fachada = Facade.getInstance();
     
@@ -38,8 +38,8 @@ public class AgendaBusiness implements IAgendaBusiness{
         
    
        fachada.SalvarNaAgenda(agenda);
-       // AK VC VAI UTILIZAR O ARQUIVO DE CONFIGURAÇÃO DE MENSAGEM 
-       // SOUSAR EM TODAS AS OUTRAS 
+       //  UTILIZAR O ARQUIVO DE CONFIGURAÇÃO DE MENSAGEM 
+        
          JOptionPane.showMessageDialog(null, MensagensUtil.getValor(MensagensUtil.MSG_SUCESSO_SALVAR, "  "));
           
     

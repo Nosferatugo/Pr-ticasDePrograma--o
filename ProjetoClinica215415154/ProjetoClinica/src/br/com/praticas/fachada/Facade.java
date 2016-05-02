@@ -7,6 +7,10 @@ package br.com.praticas.fachada;
 
 import br.com.praticas.interfac.IDaoAgenda;
 import br.com.praticas.modelobeans.BeansAgenda;
+import br.com.praticas.modelobeans.BeansFuncionario;
+import br.com.praticas.modelobeans.BeansMedico;
+import br.com.praticas.modelobeans.BeansPacientes;
+import br.com.praticas.modelobeans.BeansUsuario;
 import br.com.praticas.modelodao.DaoAgenda;
 
 
@@ -43,6 +47,22 @@ public class Facade implements IFacade {
     }
 
 //-------------------------------------------------------------------------------------------------   
+
+    public void salvarOsPacientes(BeansPacientes pacientes) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void salvarOsUsuarios(BeansUsuario usuarios) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void salvarOFuncionario(BeansFuncionario funcionario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void salvarOMedico(BeansMedico medico) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 
     

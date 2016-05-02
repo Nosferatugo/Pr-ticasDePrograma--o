@@ -267,7 +267,7 @@ public class FormAgenda extends javax.swing.JFrame {
 
     private void jButtonFinalizarAgendamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarAgendamentoActionPerformed
         
-          /*  SEU 
+          /* 
         agenda.setNomePac(jTextFieldPaciente.getText());
         agenda.setNomeMed((String) jComboBoxMedico.getSelectedItem());
         agenda.setTurno((String) jComboBoxTurno.getSelectedItem());
@@ -279,7 +279,7 @@ public class FormAgenda extends javax.swing.JFrame {
         DaoAgenda dao = new DaoAgenda();
         dao.Salvar(agenda);*/
         
-        // MEU  
+        //  
         // EM VEZ DE VC CHANMAR OS PARAMETROS DIRETAMENTE COMO TAVA VC CHAMA O BUSSINESS E PASSA OS PARAMETROS ASSIM A TELA FICA MAIS LIMPA
         business.slavarNaAgenda(jTextFieldPaciente.getText(), (String) jComboBoxMedico.getSelectedItem(), 
         (String) jComboBoxTurno.getSelectedItem(), jTextAreaMotivo.getText(),
